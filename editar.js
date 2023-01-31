@@ -31,12 +31,12 @@ salvarContainer.appendChild(btnSalvar);
 
 function mostraEditar() {
 
-    edit.scrollIntoView({ block: "center", behavior: "smooth" });
     let posicao = 0;
-
+    
     for (let i = 0; i < descriptografados.length; i++) {
-
+        
         while (posicao < criptografados.length) {
+            edit.scrollIntoView({ block: "center", behavior: "smooth" });
             criaElementosDoForm(descriptografados[i], criptografados[posicao]);
             break;
         }
