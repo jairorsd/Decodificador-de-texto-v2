@@ -236,8 +236,8 @@ btnEditar.onclick = function() {
         fechaEdit();
         return;
     } else {
-        edit.scrollIntoView({ block: "center", behavior: "smooth" });
         mostraEditar();
+        edit.scrollIntoView({ block: "center", behavior: "smooth" });
     };
     mostraOuEscondeBotaoAdicionar();
 };
