@@ -73,25 +73,6 @@ header img {
     border: 1px solid #0A3871;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .content {
     display: flex;
     align-items: center;
@@ -182,6 +163,10 @@ header img {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.container-inputs:not(:last-child) {
+    padding-bottom: 5px;
 }
 
 .container-inputs button {
@@ -376,9 +361,10 @@ span i {
 
 .top {
     position: fixed;
-    background-image: url('arrow-up-solid.svg');
+    background-image: url('arrow-up.svg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     font-size: 32px;
     color: white;
     background-color: rgba(0, 0, 0, 0.3);

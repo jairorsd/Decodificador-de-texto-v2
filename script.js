@@ -135,6 +135,7 @@ btnLimpar.onclick = function (event) {
 
     event.preventDefault();
     texto.value = '';
+    texto.focus();
     texto.style.caretColor = 'transparent';
 };
 
@@ -187,6 +188,7 @@ document.onclick = function(event) {
 let btnScrollEstaVisivel = false;
 
 window.onscroll = rolarAPaginaParaTopo;
+window.onload = function() { texto.focus(); }
 
 function rolarAPaginaParaTopo() {
 
@@ -209,6 +211,7 @@ function rolarAPaginaParaTopo() {
         btnScrollEstaVisivel = true;
     };
 };
+
 function botaoDeRolagemParaOTopo() {
 
     const btnScroll = document.createElement('button');
