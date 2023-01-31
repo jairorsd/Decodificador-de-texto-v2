@@ -30,6 +30,7 @@ function criptografaEDescriptografaTexto(caracteresRemovidos, caracteresAdiciona
     let encontrouCaracteres = false;
 
     if (!verificaSeTextoEValido(textoDigitado)) return;
+    window.scrollTo({ top: 500, behavior: 'smooth' });
 
     while (posicao < textoDigitado.length) {
 
@@ -115,7 +116,6 @@ function mostraResultado(texto) {
 
     resultado.value = texto.join('');
     resultado.style.height = resultado.scrollHeight.toString() + 'px';
-    window.scrollTo({ top: 500, behavior: 'smooth' });
 };
 
 btnCopiar.onclick = function() {
