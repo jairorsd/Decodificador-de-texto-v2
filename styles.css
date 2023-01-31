@@ -65,6 +65,7 @@ header img {
     cursor: pointer;
     transition: 0.3s;
     color: #0A3871;
+    outline: none;
 }
 
 .btn-limpar:hover {
@@ -236,7 +237,7 @@ header img {
     outline: none;
     border: none;
     caret-color: #0A3871;
-    /* caret-color: transparent; */
+    caret-color: transparent;
 }
 
 .texto::placeholder {
@@ -311,6 +312,7 @@ header img {
     border-radius: 2.4rem;
     border: 0.1rem solid #0A3871;
     cursor: pointer;
+    outline: none;
 }
 
 span {
@@ -341,6 +343,7 @@ span i {
     border-radius: 2.4rem;
     cursor: pointer;
     transition: 0.3s;
+    outline: none;
 }
 
 .btn-criptografar {
@@ -390,6 +393,7 @@ span i {
     bottom: 40px;
     right: 20px;
     cursor: pointer;
+    outline: none;
 }
 
 @media (max-width: 1200px) {

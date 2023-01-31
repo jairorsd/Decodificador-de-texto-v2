@@ -229,7 +229,7 @@ function mostraOuEscondeBotaoAdicionar() {
     }
 };
 
-btnEditar.onclick = function (event) {
+btnEditar.onclick = function() {
 
     sectionPrincipal.classList.add('editando');
 
@@ -238,8 +238,7 @@ btnEditar.onclick = function (event) {
         return;
     } else {
         mostraEditar();
-        event.preventDefault();
-    }
+    };
     mostraOuEscondeBotaoAdicionar();
 };
 

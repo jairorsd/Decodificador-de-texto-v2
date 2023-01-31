@@ -30,7 +30,6 @@ function criptografaEDescriptografaTexto(caracteresRemovidos, caracteresAdiciona
     let encontrouCaracteres = false;
 
     if (!verificaSeTextoEValido(textoDigitado)) return;
-    window.scrollTo({ top: 500, behavior: 'smooth' });
 
     while (posicao < textoDigitado.length) {
 
@@ -116,6 +115,7 @@ function mostraResultado(texto) {
 
     resultado.value = texto.join('');
     resultado.style.height = resultado.scrollHeight.toString() + 'px';
+    window.scrollTo({ top: 500, behavior: 'smooth' });
 };
 
 btnCopiar.onclick = function() {
@@ -134,45 +134,45 @@ btnLimpar.onclick = function (event) {
 
     event.preventDefault();
     texto.value = '';
-    // texto.style.caretColor = 'transparent';
+    texto.style.caretColor = 'transparent';
 };
 
-// let interval;
-// texto.onfocus = function() {
+let interval;
+texto.onfocus = function() {
 
-//     if (!this.value) {
-//         interval = setInterval(placeholder, 500);
-//     };
-// };
+    if (!this.value) {
+        interval = setInterval(placeholder, 500);
+    };
+};
 
-// texto.onblur = function() {
+texto.onblur = function() {
 
-//     this.placeholder = 'Digitar texto_';
-//     clearInterval(interval);
-// };
+    this.placeholder = 'Digitar texto_';
+    clearInterval(interval);
+};
 
-// texto.oninput = function() {
+texto.oninput = function() {
 
-//     clearInterval(interval);
+    clearInterval(interval);
 
-//     this.style.caretColor = '#0A3871';
-//     if (!this.value) {
-//         interval = setInterval(placeholder, 500);
-//         this.style.caretColor = 'transparent';
-//     };
-// };
+    this.style.caretColor = '#0A3871';
+    if (!this.value) {
+        interval = setInterval(placeholder, 500);
+        this.style.caretColor = 'transparent';
+    };
+};
 
-// let sublinhado = '_';
-// function placeholder() {
+let sublinhado = '_';
+function placeholder() {
 
-//     texto.placeholder = 'Digitar texto' + sublinhado;
+    texto.placeholder = 'Digitar texto' + sublinhado;
 
-//     if (!sublinhado) {
-//         sublinhado = '_';
-//     } else {
-//         sublinhado = '';
-//     };
-// };
+    if (!sublinhado) {
+        sublinhado = '_';
+    } else {
+        sublinhado = '';
+    };
+};
 
 document.onclick = function(event) {
 
