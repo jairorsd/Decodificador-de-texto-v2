@@ -36,7 +36,6 @@ function mostraEditar() {
     for (let i = 0; i < descriptografados.length; i++) {
         
         while (posicao < criptografados.length) {
-            edit.scrollIntoView({ block: "center", behavior: "smooth" });
             criaElementosDoForm(descriptografados[i], criptografados[posicao]);
             break;
         }
@@ -237,6 +236,7 @@ btnEditar.onclick = function() {
         fechaEdit();
         return;
     } else {
+        edit.scrollIntoView({ block: "center", behavior: "smooth" });
         mostraEditar();
     };
     mostraOuEscondeBotaoAdicionar();
