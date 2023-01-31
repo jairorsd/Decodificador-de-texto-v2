@@ -237,7 +237,7 @@ btnEditar.onclick = function() {
         return;
     } else {
         mostraEditar();
-        edit.scrollIntoView({ block: "center", behavior: "smooth" });
+        edit.scrollIntoView();
     };
     mostraOuEscondeBotaoAdicionar();
 };

@@ -108,6 +108,7 @@ function estaEmMinusculoESemAcento(texto) {
 
 function mostraResultado(texto) {
 
+    resultado.style.height = 'auto';
     resultado.style.display = 'inline-block';
     resultado.previousElementSibling.style.display = 'none';
     resultado.parentElement.style.justifyContent = 'space-between';
@@ -115,7 +116,7 @@ function mostraResultado(texto) {
 
     resultado.value = texto.join('');
     resultado.style.height = resultado.scrollHeight.toString() + 'px';
-    window.scrollTo({ top: 500, behavior: 'smooth' });
+    window.scrollTo({ top: 500 });
 };
 
 btnCopiar.onclick = function() {
