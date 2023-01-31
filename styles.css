@@ -361,11 +361,11 @@ span i {
 
 .top {
     position: fixed;
-    background-image: url('arrow-up.svg');
+    /* background-image: url('arrow-up.svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    font-size: 32px;
+    background-size: contain; */
+    font-size: 24px;
     color: white;
     background-color: rgba(0, 0, 0, 0.3);
     opacity: 0.5;
@@ -380,6 +380,11 @@ span i {
     right: 20px;
     cursor: pointer;
     outline: none;
+}
+
+.top::before {
+    color: #FFFFFF;
+    content: '⯅';
 }
 
 @media (max-width: 1200px) {
