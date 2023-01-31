@@ -431,6 +431,10 @@ span i {
         height: 43.6rem !important;
     }
 
+    .texto {
+        height: 100%;
+    }
+
     .mensagem {
         width: 100%;
         max-width: 100%;
@@ -469,12 +473,20 @@ span i {
     .editar {
         width: 100%;
     }
+
+    .texto {
+        height: 100%;
+    }
 }
 
 @media (max-height: 567px) {
 
     .container img {
         display: none;
+    }
+
+    .texto {
+        height: 100%;
     }
 }
 
@@ -488,6 +500,10 @@ span i {
 
     .principal {
         padding: 15.2rem 1.6rem 3.2rem 1.6rem;
+    }
+
+    .texto {
+        height: 100%;
     }
 
     .content {
@@ -526,5 +542,9 @@ span i {
 
     .container {
         min-width: auto;
+    }
+
+    .texto {
+        height: 100%;
     }
 }
