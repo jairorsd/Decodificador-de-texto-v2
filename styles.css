@@ -65,7 +65,6 @@ header img {
     cursor: pointer;
     transition: 0.3s;
     color: #0A3871;
-    outline: none;
 }
 
 .btn-limpar:hover {
@@ -237,7 +236,7 @@ header img {
     outline: none;
     border: none;
     caret-color: #0A3871;
-    caret-color: transparent;
+    /* caret-color: transparent; */
 }
 
 .texto::placeholder {
@@ -342,7 +341,6 @@ span i {
     border-radius: 2.4rem;
     cursor: pointer;
     transition: 0.3s;
-    outline: none;
 }
 
 .btn-criptografar {
