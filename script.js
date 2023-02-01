@@ -217,6 +217,9 @@ function botaoDeRolagemParaOTopo() {
     const btnScroll = document.createElement('button');
 
     btnScroll.classList.add('top');
+    btnScroll.innerHTML = `<svg  version="1.1" id="Layer_1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="18" height="12" 
+    viewBox="0 0 531.74 460.5" overflow="visible" enable-background="new 0 0 531.74 460.5" xml:space="preserve"><polygon 
+    stroke="#000000" points="0.866,460 265.87,1 530.874,460 "/></svg>`;
     document.body.appendChild(btnScroll);
 };
 

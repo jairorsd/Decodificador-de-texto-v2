@@ -361,14 +361,9 @@ span i {
 
 .top {
     position: fixed;
-    /* background-image: url('arrow-up.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain; */
-    font-size: 24px;
-    color: white;
+    font-size: 16px;
     background-color: rgba(0, 0, 0, 0.3);
-    opacity: 0.5;
+    opacity: 0.8;
     text-align: center;
     vertical-align: middle;
     width: 40px;
@@ -382,9 +377,9 @@ span i {
     outline: none;
 }
 
-.top::before {
-    color: #FFFFFF;
-    content: '⯅';
+.top svg {
+    pointer-events: none;
+    fill: white;
 }
 
 @media (max-width: 1200px) {
